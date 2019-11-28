@@ -28,8 +28,7 @@ tw-story[tags~="no-header"] tw-include[type="header"] {
 [[Begin-&gt;intro 1]]</tw-passagedata><tw-passagedata pid="2" name="intro 1" tags="no-header" position="400,250" size="100,100">{
 	(set: $playerName to (prompt: &#39;Please enter your name&#39;, $playerName))
 	(set: $playerHomeTown to (prompt: &#39;Please enter the name of your hometown.&#39;, $playerHomeTown))	
-}
-&quot;$playerName! Wake up! We&#39;re here!&quot; calls a woman.
+} &quot;$playerName! Wake up! We&#39;re here!&quot; calls a woman.
 
 You can barely hear her over the hypnotic whirring of the aircraft engines.
 
@@ -94,12 +93,12 @@ Before beginning your journey, you consider asking ask Ann and Liv some question
 &gt; [[Ask about Queen Maud Land.-&gt;ask queen maud land]]
 &gt; [[Ask about the Antarctic Treaty System.-&gt;ask antarctic treaty system]]
 &gt; [[Ask about your goal for this expedition.-&gt;ask expedition goal]]
-&gt; [[Tell them you are ready to depart.-&gt;depart]]</tw-passagedata><tw-passagedata pid="6" name="impossible to tell" tags="no-header" position="249,699" size="100,100">(set: $knowledge to it + 1)
+&gt; [[Tell them you are ready to depart.-&gt;depart]]</tw-passagedata><tw-passagedata pid="6" name="impossible to tell" tags="" position="249,699" size="100,100">(set: $knowledge to it + 1)
 &quot;Correct!&quot; cheers Liv. &quot;Due to the Earth&#39;s titled axis of rotation, Antarctica is under constant sunlight at this time of year.&quot;
 
 (display: &#39;get map&#39;)
 =&gt;&lt;=
-[[Continue-&gt;intro 4]]</tw-passagedata><tw-passagedata pid="7" name="get map" tags="" position="398,705" size="100,100">Ann nods. &quot;It&#39;s like a neverending day until March. But you&#39;ll adjust soon enough.&quot;
+[[Continue-&gt;intro 4]]</tw-passagedata><tw-passagedata pid="7" name="get map" tags="" position="398,705" size="100,100">(set: $hasMap to true) Ann nods. &quot;It&#39;s like a neverending day until March. But you&#39;ll adjust soon enough.&quot;
 
 &quot;Indeed you will,&quot; continues Liv. &quot;You won&#39;t really have a choice. It&#39;s the real deal out here. That&#39;s why you&#39;ll need a great sense of humor.&quot; She looks solemnly across the tundra. &quot;After all, nature is neutral. It doesn&#39;t really care about us...&quot;
 
@@ -114,11 +113,11 @@ Liv pulls a map from her sack and hands it to you. &quot;Be careful with this, $
 * You can now view the map by clicking **MAP** at the top of any page. 
 * On the map screen, click your browser&#39;s &quot;back&quot; button to return to the last page you were reading.
 * The map shows various locations of interest throughout Antarctica. It might even change based on your choices throughout the story, so keep an eye out!
----</tw-passagedata><tw-passagedata pid="8" name="probably day or night" tags="no-header" position="550,700" size="100,100">&quot;But how would you know?&quot; asks Liv. &quot;Due to the Earth&#39;s titled axis of rotation, Antarctica is under constant sunlight at this time of year.&quot;
+---</tw-passagedata><tw-passagedata pid="8" name="probably day or night" tags="" position="550,700" size="100,100">&quot;But how would you know?&quot; asks Liv. &quot;Due to the Earth&#39;s titled axis of rotation, Antarctica is under constant sunlight at this time of year.&quot;
 
 (display: &#39;get map&#39;)
 =&gt;&lt;=
-[[Continue-&gt;intro 4]]</tw-passagedata><tw-passagedata pid="9" name="ask antarctic treaty system" tags="" position="175,1000" size="100,100">{back link}</tw-passagedata><tw-passagedata pid="10" name="ask queen maud land" tags="" position="550,1000" size="100,100">{back link}</tw-passagedata><tw-passagedata pid="11" name="ask expedition goal" tags="" position="325,1000" size="100,100">{back link}</tw-passagedata><tw-passagedata pid="12" name="depart" tags="" position="401,1201" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="startup" tags="startup" position="194,98" size="100,100">{
+[[Continue-&gt;intro 4]]</tw-passagedata><tw-passagedata pid="9" name="ask antarctic treaty system" tags="" position="175,1000" size="100,100">{back link}</tw-passagedata><tw-passagedata pid="10" name="ask queen maud land" tags="" position="550,1000" size="100,100">{back link}</tw-passagedata><tw-passagedata pid="11" name="ask expedition goal" tags="" position="325,1000" size="100,100">{back link}</tw-passagedata><tw-passagedata pid="12" name="depart" tags="" position="406,1131" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="startup" tags="startup" position="194,98" size="100,100">{
 	(set: $author to &#39;Linus Hobson&#39;)
 	(set: $playerName to &#39;Lucy&#39;)
 	(set: $playerHomeTown to &#39;Detroit&#39;)
