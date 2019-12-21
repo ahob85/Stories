@@ -231,7 +231,7 @@ Liv pulls a small device from her sack and hands it to you. &quot;Be careful wit
 &lt;&lt;/if&gt;&gt;\
 Ann stands tall, imitating a commander giving you a mission. &quot;Attention, explorer! Our ultimate goal is to reach [[McMurdo Station|https://en.wikipedia.org/wiki/McMurdo_Station]], a United States-operated research base at the other end of the continent, over 1,700 miles from here. We have less than 100 days to do it. That is, before summer gives way to winter. And trust me, you //do not// want to be traveling in Antarctica during the winter...&quot;
 
-You wince at &quot;over 1,700 miles&quot; and then &quot;less than 100 days&quot;. For some reason those figures didn&#39;t cause you any alarm when you encountered them back in $playerHomeTown. Now that you&#39;re here, reality has hit you in the face like a gust of icy wind. 
+You wince at &quot;over 1,700 miles&quot; and then &quot;less than 100 days&quot;. For some reason those figures didn&#39;t cause you any alarm when you encountered them back in $playerHometown. Now that you&#39;re here, reality has hit you in the face like a gust of icy wind. 
 
 Liv, perhaps sensing your agitation, offers some consolation. &quot;We&#39;ve both done Antarctic expeditions before. I&#39;ve even done one completely alone. Don&#39;t worry, $playerName. You&#39;re in good hands. Just be sure to listen to us and, most importantly, keep your eyes on the horizon.&quot; 
 ----
@@ -246,7 +246,7 @@ Your adventure into Antarctica finally begins. You attach your sled to your wais
 
 In the end, you don&#39;t mind. You&#39;re willing to do whatever it takes. You&#39;ve always had an inexplicable affinity toward Antarctica, as if something has been calling you here. You&#39;ve experienced lucid dreams where you&#39;d journey through the tundra toward a goal you&#39;ve never been able to identify. Adventure? Fame? Mere curiosity? No, it was something deeper. You&#39;ve felt //lured// to the continent. Even before you knew its name, you knew it existed, and you had get here by any means necessary.
 
-The fact that you&#39;re finally here, then, is a &quot;dream come true&quot; in the most literal sense, even if the going will be tough. As cold and dangerous as it might be in Antarctica, it beats being stuck in $playerHomeTown right now, that&#39;s for sure.
+The fact that you&#39;re finally here, then, is a &quot;dream come true&quot; in the most literal sense, even if the going will be tough. As cold and dangerous as it might be in Antarctica, it beats being stuck in $playerHometown right now, that&#39;s for sure.
 ----
 @@.right;
 [[Continue|intro 4]]
@@ -306,27 +306,27 @@ Since you have been heading south this entire time, you deduce the direction you
 You aren&#39;t sure what direction you&#39;re running in, but your only concern for now is not getting swallowed by the whiteout, which will disorient you more than you already are.
 
 [continue]
-&gt; [[Crouch and endure the whiteout.-&gt;endure whiteout]]</tw-passagedata><tw-passagedata pid="20" name="endure whiteout" tags="" position="1374,2001" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="keep running north" tags="" position="1224,2151" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="StoryInit" tags="" position="1102,99" size="100,100">&lt;&lt;set $author = &quot;Linus Hobson&quot;&gt;&gt;
-&lt;&lt;set $playerName = &quot;Lucy&quot;&gt;&gt;
-&lt;&lt;set $playerHomeTown = &quot;Detroit&quot;&gt;&gt;
+&gt; [[Crouch and endure the whiteout.-&gt;endure whiteout]]</tw-passagedata><tw-passagedata pid="20" name="endure whiteout" tags="" position="1374,2001" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="keep running north" tags="" position="1224,2151" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="StoryInit" tags="" position="1102,99" size="100,100">&lt;&lt;set $author = &quot;Linus Calderón&quot;&gt;&gt;
+&lt;&lt;set $playerName = &quot;Lucía&quot;&gt;&gt;
+&lt;&lt;set $playerHometown = &quot;San Pablo&quot;&gt;&gt;
 &lt;&lt;set $physical = 0&gt;&gt;
 &lt;&lt;set $mental = 0&gt;&gt;
-&lt;&lt;set $hasGPS = false&gt;&gt;
-&lt;&lt;set $gpsLocation = &quot;Sigyn Glacier&quot;&gt;&gt;
-</tw-passagedata><tw-passagedata pid="23" name="StoryCaption" tags="" position="1310,95" size="100,100">&#39;&#39;Player Profile&#39;&#39;
+&lt;&lt;set $location = &quot;Unknown&quot;&gt;&gt;
+&lt;&lt;set $hasGPS = false&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="StoryCaption" tags="" position="1310,96" size="100,100">&#39;&#39;Info&#39;&#39;
 @@.left;
 &#39;&#39;Name:&#39;&#39; $playerName
-&#39;&#39;Hometown:&#39;&#39; $playerHomeTown
+&#39;&#39;Hometown:&#39;&#39; $playerHometown
 &#39;&#39;Physical:&#39;&#39; $physical 
 &#39;&#39;Mental:&#39;&#39; $mental
-&lt;&lt;if $hasGPS&gt;&gt; &#39;&#39;Current Location:&#39;&#39; $gpsLocation
-  &lt;&lt;if $gpsLocation === &#39;Sigyn Glacier&#39;&gt;&gt;&#39;&#39;Latitude:&#39;&#39; 71°52′S 
-	  &#39;&#39;Longitude:&#39;&#39; 8°36′E
-	  [img[Current location on map.|Assets/gps_sigyn_glacier.png]]
-  &lt;&lt;elseif $gpsLocation === &#39;Antarctic Plateau&#39;&gt;&gt;&#39;&#39;Latitude:&#39;&#39; 76°15′03″S 
-	  &#39;&#39;Longitude:&#39;&#39; 10°33′38″E
-	  [img[Current location on map.|Assets/gps_antarctic_plateau.png]]
-  &lt;&lt;/if&gt;&gt;\
+&lt;&lt;if $hasGPS&gt;&gt;\
+	&#39;&#39;Location:&#39;&#39; $location
+	&lt;&lt;if $location === &quot;Sigyn Glacier&quot;&gt;&gt;\
+		[img[Current location on map.|Assets/gps_sigyn_glacier.png]]\
+	&lt;&lt;elseif $location === &quot;Antarctic Plateau&quot;&gt;&gt;\
+		[img[Current location on map.|Assets/gps_antarctic_plateau.png]]\
+	&lt;&lt;else&gt;&gt;\
+		[img[Current location on map.|Assets/gps_template.png]]\
+	&lt;&lt;/if&gt;&gt;\
 &lt;&lt;/if&gt;&gt;\
 @@</tw-passagedata><tw-passagedata pid="24" name="StoryAuthor" tags="" position="1205,95" size="100,100">By $author
 ----</tw-passagedata><tw-passagedata pid="25" name="StoryTitle" tags="" position="996,97" size="100,100">Echoes of Antarctica</tw-passagedata></tw-storydata>
