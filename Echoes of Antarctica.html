@@ -148,7 +148,7 @@ Ann and Liv are your caretakers and mentors on this expedition. Together, the th
 ----
 @@.right;
 [[Continue|intro 3]]
-@@</tw-passagedata><tw-passagedata pid="4" name="intro 4" tags="" position="1300,799" size="100,100">You ponder Ann&#39;s question and stare at the sunny sky. Is it day or night? You know the answer, you&#39;ve done your homework. One might even call you an Antarctic enthusiast. 
+@@</tw-passagedata><tw-passagedata pid="4" name="intro 4" tags="choice" position="1299,800" size="100,100">You ponder Ann&#39;s question and stare at the sunny sky. Is it day or night? You know the answer, you&#39;ve done your homework. One might even call you an Antarctic enthusiast. 
 
 You vividly recall an image you saw while researching online. It pertained to how the Earth&#39;s [[Northern|https://en.wikipedia.org/wiki/Northern_Hemisphere]] and [[Southern|https://en.wikipedia.org/wiki/Southern_Hemisphere]] Hemispheres experience opposite seasons depending on the time of year. This is all because of how the Earth rotates around the Sun, and how the Earth itself rotates on a titled axis. From the image you were able to figure out how much sunlight Antarctica gets during its summer, relative to its winter. 
 
@@ -159,7 +159,7 @@ It&#39;s currently mid-November, so the answer should be obvious. Right?
 [[Answer that it is day.|probably day or night]]
 [[Answer that it is night.|probably day or night]]
 [[Answer that it is hard to tell.|hard to tell]]
-@@</tw-passagedata><tw-passagedata pid="5" name="intro 5" tags="" position="1300,1100" size="100,100">&lt;&lt;if visited() === 1&gt;&gt;\
+@@</tw-passagedata><tw-passagedata pid="5" name="intro 5" tags="choice" position="1300,1100" size="100,100">&lt;&lt;if visited() === 1&gt;&gt;\
   You locate where you are on the map: [[Queen Maud Land|https://en.wikipedia.org/wiki/Queen_Maud_Land]], a territory claimed by Liv&#39;s home country of Norway.
 
   You remember discussing the issue of &quot;claimed territories&quot; with Ann and Liv on the flight.
@@ -250,7 +250,8 @@ The fact that you&#39;re finally here, then, is a &quot;dream come true&quot; in
 ----
 @@.right;
 [[Continue|intro 4]]
-@@</tw-passagedata><tw-passagedata pid="14" name="sigyn glacier" tags="" position="1374,1401" size="100,100">According to Liv, you are currently hiking across Sigyn Glacier, one of many glaciers in Antarctica. 
+@@</tw-passagedata><tw-passagedata pid="14" name="sigyn glacier" tags="" position="1374,1401" size="100,100">&lt;&lt;set $location = &quot;Sigyn Glacier&quot;&gt;&gt;\
+According to Liv, you are currently hiking across Sigyn Glacier, one of many glaciers in Antarctica. 
 
 You&#39;ve studied glaciers in school, so you know that they are massive, slow-moving bodies of ice. About 98% of Antarctica is covered by a gigantic glacier known as the [[Antarctic Ice Sheet|https://en.wikipedia.org/wiki/Antarctic_ice_sheet]]. While most of the Earth&#39;s water is in the ocean, most of its //freshwater// is right beneath your feet, albeit frozen. This means you should never go thirsty, provided you have sufficient time, energy, and tools to melt enough of the glacial ice to drink. 
 
@@ -260,7 +261,7 @@ The first few days are uneventful. You might even call them tiresome. Due to a l
 ----
 @@.right;
 [[Continue|antarctic plateau]]
-@@</tw-passagedata><tw-passagedata pid="15" name="antarctic plateau" tags="" position="1374,1551" size="100,100">&lt;&lt;set $gpsLocation = &#39;Antarctic Plateau&#39;&gt;&gt;\
+@@</tw-passagedata><tw-passagedata pid="15" name="antarctic plateau" tags="" position="1374,1551" size="100,100">&lt;&lt;set $location = &quot;Antarctic Plateau&quot;&gt;&gt;\
 It is the sixteenth day of the expedition, and you still haven&#39;t covered much ground. You have traveled roughly 104 miles, but a sliver of the 1,700 you must traverse before winter. You are quite exhausted, and despite their steadfastness, you suspect Ann and Liv are as well. Persistent exposure to the Sun&#39;s ultraviolet light has left you with slightly burned faces, which would be much worse if not for your constant application of sunscreen. 
 
 Fortunately, today you have finally reached the [[Antarctic Plateau|https://en.wikipedia.org/wiki/Antarctic_Plateau]], an expanse of East Antarctica with an average elevation 9,800 feet. This area also contains the United States-operated [[Amundsen-Scott South Pole Station|https://www.nsf.gov/geo/opp/support/southp.jsp]], which will serve as a convenient checkpoint during your journey.
@@ -269,30 +270,37 @@ Fortunately, today you have finally reached the [[Antarctic Plateau|https://en.w
 The flat surface and strong wind here will make ski-sailing possible. 
 
 @@.center;
-&lt;iframe width=&quot;75%&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/1VDiKkrvHrg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;75%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/1VDiKkrvHrg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 @@
 You should be able to cover far more ground now. Following Ann and Liv&#39;s lead, you make the necessary adjustments to your equipment. When all is ready, you take a deep breath, raise your sail, and brace for the unexpected. The roaring wind immediately takes hold of the sail, and you along with it, pulling you at breakneck speed.
 ----
 @@.right;
 [[Continue|whiteout]]
-@@</tw-passagedata><tw-passagedata pid="16" name="whiteout" tags="" position="1317,1701" size="200,100">The closest experience you can relate to ski-sailing is flying a kite. Only here, the kite is pulling _you_ rather than vice versa. Abrupt gusts jerk your sail so violently that you are lifted a few feet off the snow. While it takes considerable effort for you to maintain your balance, you eventually enjoy this free ride offered by the &quot;polar express&quot;. 
+@@</tw-passagedata><tw-passagedata pid="16" name="whiteout" tags="choice" position="1317,1701" size="200,100">The closest experience you can relate to ski-sailing is flying a kite. Only here, the kite is pulling //you// rather than vice versa. Abrupt gusts jerk your sail so violently that you are lifted a few feet off the snow. While it takes considerable effort for you to maintain your balance, you eventually enjoy this free ride offered by the &quot;polar express&quot;. 
 
 Regrettably, by now you realize that you have failed to account for the distance Ann and Liv have traveled ahead of you. It certainly isn&#39;t a distance you&#39;re comfortable with. In fact, this is the farthest you&#39;ve been from them since you began the expedition.
 
 You spot your mentors as tiny specs heading directly into a whiteout.
 
-{embed YouTube video: &#39;https://www.youtube.com/watch?v=YHd1G4w5wJU&#39;}
-
-&gt; [[Stop and wait.-&gt;wait whiteout]]
-&gt; [[Head into the whiteout.-&gt;head into whiteout]]</tw-passagedata><tw-passagedata pid="17" name="wait whiteout" tags="" position="1299,1851" size="100,100">mental: mental + 1
---
+@@.center;
+&lt;iframe width=&quot;75%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/watch?v=YHd1G4w5wJU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+@@
+----
+@@.right;
+[[Stop and wait.|wait whiteout]]
+[[Head into the whiteout.|head into whiteout]]
+@@</tw-passagedata><tw-passagedata pid="17" name="wait whiteout" tags="choice" position="1299,1851" size="100,100">&lt;&lt;set $mental = $mental + 1&gt;&gt;\
 You decide it&#39;s best to stop and wait. In your mind, the worst scenario would be unnecessarily engulfing yourself in the whiteout and losing track of Ann and Liv completely. &quot;Discretion is the better part of valor,&quot; as the saying goes. 
 
-You wait for what you estimate to be a few minutes, but the two women don&#39;t reappear. Meanwhile, the whiteout is expanding toward your position. Within moments it will be upon you.
+You wait for what you estimate to be about a minute, but the two women don&#39;t reappear. Meanwhile, the whiteout is expanding toward your position. Within moments it will be upon you.
+----
+@@.right;
+[[Run away from the whiteout.|run away from whiteout]]
+[[Crouch and endure the whiteout.|endure whiteout]]
+@@</tw-passagedata><tw-passagedata pid="18" name="head into whiteout" tags="" position="1449,1851" size="100,100">&lt;&lt;set $physical = $physical + 2&gt;&gt;\
+You tighten your muscles and widen the width of your sail, allowing more wind to fill it and carry you faster toward the whiteout. Within seconds you are wrapped in so much whiteness that you can no longer see your sail before you. In fact, you are positive you aren&#39;t even being pulled by the sail at this point - it is likely lost. 
 
-&gt; [[Run away from the whiteout.-&gt;run away from whiteout]]
-&gt; [[Crouch and endure the whiteout.-&gt;endure whiteout]]</tw-passagedata><tw-passagedata pid="18" name="head into whiteout" tags="" position="1449,1851" size="100,100">physical: physical + 1
---
+Nevertheless, you are determined to find Ann and Liv. You hold fast to your ski poles and stomp ahead - or stomp around, you can&#39;t really tell. All the while you call out to your mentors as loudly as you can.
 </tw-passagedata><tw-passagedata pid="19" name="run away from whiteout" tags="" position="1224,2001" size="100,100">physical: physical + 1
 --
 You detach your ski-sailing equipment and run as fast as you can in the  direction opposite the approaching whiteout. 
